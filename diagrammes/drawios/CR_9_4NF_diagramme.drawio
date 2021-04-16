@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-16T20:27:55.276Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" etag="JECwK9FKYfx6_SRMBB12" version="14.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-16T20:29:47.408Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" etag="BoRuR_0OJJF7-N31SSlh" version="14.6.1" type="github">
   <diagram id="9SjnBQGCKEw5g2mVxKEI" name="Page-1">
-    <mxGraphModel dx="2240" dy="1164" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1104" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -256,10 +256,10 @@
         <mxCell id="1UcQ3Sz3F0J6C7WJ8FVs-66" value="+ Famazon Phone String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1UcQ3Sz3F0J6C7WJ8FVs-61" vertex="1">
           <mxGeometry y="128" width="173" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="1UcQ3Sz3F0J6C7WJ8FVs-68" value="shipped_to" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#fff2cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#d6b656;" parent="1" vertex="1">
+        <mxCell id="1UcQ3Sz3F0J6C7WJ8FVs-68" value="gives_to_delivery" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#fff2cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="1410" y="268" width="170" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="1UcQ3Sz3F0J6C7WJ8FVs-69" value="+ shipped_to_ID Int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1UcQ3Sz3F0J6C7WJ8FVs-68" vertex="1">
+        <mxCell id="1UcQ3Sz3F0J6C7WJ8FVs-69" value="+ gives_to_delivery_ID Int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1UcQ3Sz3F0J6C7WJ8FVs-68" vertex="1">
           <mxGeometry y="26" width="170" height="24" as="geometry" />
         </mxCell>
         <mxCell id="1UcQ3Sz3F0J6C7WJ8FVs-70" value="+ fk_supplier_id Int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1UcQ3Sz3F0J6C7WJ8FVs-68" vertex="1">
