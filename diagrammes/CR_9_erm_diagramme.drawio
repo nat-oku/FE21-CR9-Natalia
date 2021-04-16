@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-16T07:49:44.818Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" etag="0v3lFqGFjZwQ05vvxj5s" version="14.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-16T07:50:52.295Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" etag="AWNQ0TkuAIRU3Rwbc9yA" version="14.6.1" type="github">
   <diagram id="H4wPdXL3QeX7m4DB4Rqo" name="Page-1">
     <mxGraphModel dx="1730" dy="913" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -22,7 +22,7 @@
         <mxCell id="J5k1jIa9eLN9t2eHICcV-9" value="buy" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="455" y="530" width="130" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="J5k1jIa9eLN9t2eHICcV-11" value="supplier" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="J5k1jIa9eLN9t2eHICcV-11" value="suppliers" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="780" y="225" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="J5k1jIa9eLN9t2eHICcV-12" value="payment" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
@@ -138,6 +138,16 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1047.5" y="722.5" as="sourcePoint" />
             <mxPoint x="1210" y="605" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J5k1jIa9eLN9t2eHICcV-47" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;endFill=0;startArrow=ERoneToMany;startFill=0;" edge="1" parent="1" source="J5k1jIa9eLN9t2eHICcV-11" target="J5k1jIa9eLN9t2eHICcV-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1047.5" y="722.5" as="sourcePoint" />
+            <mxPoint x="1210" y="605" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="900" y="250" />
+              <mxPoint x="1465" y="250" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
