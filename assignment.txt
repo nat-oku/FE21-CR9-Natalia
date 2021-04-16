@@ -1,0 +1,7 @@
+Use the 4 steps for a database development process:
+
+1) Define the purpose - Cloud diagram
+2) The Entity model - ER diagram
+3) The Unified Modeling Language - Classes Diagram
+4) Refine and Normalize the Design
+
