@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-16T08:11:32.790Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" etag="wV29eyI8gFGf5QtOhf9X" version="14.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-16T08:13:13.422Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" etag="TQiyC41tnqm2t2aM4YCB" version="14.6.1" type="github">
   <diagram id="H4wPdXL3QeX7m4DB4Rqo" name="Page-1">
-    <mxGraphModel dx="1730" dy="913" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1221" dy="645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -166,7 +166,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="J5k1jIa9eLN9t2eHICcV-53" value="fk_product_id" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="150" y="510" width="100" height="40" as="geometry" />
+          <mxGeometry x="150" y="514" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="J5k1jIa9eLN9t2eHICcV-54" value="ProductID" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="360" y="350" width="100" height="40" as="geometry" />
@@ -206,6 +206,24 @@
         </mxCell>
         <mxCell id="J5k1jIa9eLN9t2eHICcV-66" value="delivers_products_to_ID" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="1540" y="687.5" width="155" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="J5k1jIa9eLN9t2eHICcV-67" value="FirstName" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="420" y="785" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="J5k1jIa9eLN9t2eHICcV-68" value="LastName" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="320" y="785" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="J5k1jIa9eLN9t2eHICcV-69" value="Address" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="320" y="825" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="J5k1jIa9eLN9t2eHICcV-70" value="Username" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="420" y="825" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="J5k1jIa9eLN9t2eHICcV-71" value="Email" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="314" y="865" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="J5k1jIa9eLN9t2eHICcV-72" value="FormOfPayment" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="414" y="865" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
