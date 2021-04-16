@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-16T07:22:47.464Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" etag="UBakpovZOPv9a3GXde4n" version="14.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-16T07:23:22.761Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" etag="VufBmr93O-QXfd8LF6Y6" version="14.6.1" type="github">
   <diagram id="H4wPdXL3QeX7m4DB4Rqo" name="Page-1">
     <mxGraphModel dx="1422" dy="728" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -9,6 +9,9 @@
         </mxCell>
         <mxCell id="J5k1jIa9eLN9t2eHICcV-2" value="&lt;font style=&quot;font-size: 21px&quot;&gt;Step 2: Entity-Relationship-Model&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="70" y="60" width="720" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="J5k1jIa9eLN9t2eHICcV-3" value="famazon" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
