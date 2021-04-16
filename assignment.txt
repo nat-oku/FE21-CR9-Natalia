@@ -1,7 +1,21 @@
-Use the 4 steps for a database development process:
+Create database for Famazon (e-commerce site)
+* customers browse & purchase
+  > products
+    - are suplied by different companies
+      + these companies sell their products on Famazon
 
-1) Define the purpose - Cloud diagram
-2) The Entity model - ER diagram
-3) The Unified Modeling Language - Classes Diagram
-4) Refine and Normalize the Design
 
+* customers need
+  > account with personal data 
+    - name
+    - address
+    - username
+    - email
+    - form of payment (creditcard, paypal)
+      + invoice
+
+* payment
+  > invoice
+  > shipping info
+    + customer's personal data (address, name, username, email)
+    + one or many shipping companies
