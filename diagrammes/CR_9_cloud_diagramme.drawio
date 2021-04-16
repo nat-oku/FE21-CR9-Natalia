@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-16T07:01:12.228Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" etag="Y-VmkOTeJyO-lAuxKPfn" version="14.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-16T07:02:55.364Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" etag="3g1rCYA92sogsAnBWEPS" version="14.6.0" type="github">
   <diagram id="PnPeg7tA5tx20dT9B7Yd" name="Page-1">
     <mxGraphModel dx="1422" dy="691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -23,13 +23,16 @@
           <mxGeometry x="60" y="60" width="720" height="20" as="geometry" />
         </mxCell>
         <mxCell id="HsdS4_akaEj0isNQwl-u-7" value="shipping" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="440" y="260" width="120" height="80" as="geometry" />
+          <mxGeometry x="610" y="260" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="HsdS4_akaEj0isNQwl-u-8" value="account" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="130" y="260" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="HsdS4_akaEj0isNQwl-u-9" value="payment" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="280" y="260" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HsdS4_akaEj0isNQwl-u-10" value="invoice" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="450" y="260" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
