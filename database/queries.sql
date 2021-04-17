@@ -71,3 +71,78 @@ from delivers_products_to
 INNER JOIN customers on delivers_products_to.fk_customer_id = customers.CustomerID
 INNER join shipping_company on delivers_products_to.fk_shipping_company_id = shipping_company.ShippingCompanyID
 GROUP by delivers_products_to.fk_shipping_company_id
+
+
+-- 9 QUERY: show me unpaid invoices
+SELECT * from payment where payment.DateOfPayment is null;
+
+-- 10 QUERY: -- How many products were bought & succesfully paid for?
+
+SELECT (
+	SELECT COUNT(*) from buy)
+    as no_of_buys,
+    (SELECT COUNT(*) from products)
+    as no_of_products,
+    (SELECT COUNT(*) from sells)
+    as no_of_total_sells,
+    (SELECT COUNT(*) from successful)
+    as no_of_successful_payments;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+-- 10 QUERY: -- Show me all table data next to each other
+
+SELECT (
+	SELECT COUNT(*) from buy)
+    as no_of_buys,
+    (SELECT COUNT(*)
+     from creates_invoice_for) as no_of_invoices,
+    (SELECT COUNT(*) from customers)
+    as no_of_customers,
+    (SELECT COUNT(*) from delivers_products_to)
+    as no_of_deliveries,
+    (SELECT COUNT(*) from gives_to_delivery)
+    as no_of_given_deliveries,
+    (SELECT COUNT(*) from payment)
+    as no_of_payments,
+    (SELECT COUNT(*) from payment_form)
+    as no_of_payment_forms,
+    (SELECT COUNT(*) from products)
+    as no_of_products,
+    (SELECT COUNT(*) from searches)
+    as no_of_searches,
+    (SELECT COUNT(*) from sells)
+    as no_of_total_sells,
+    (SELECT COUNT(*) from shipping_company)
+    as no_of_all_shipping_companies,
+    (SELECT COUNT(*) from successful)
+    as no_of_successful_payments,
+    (SELECT COUNT(*) from supplier)
+    as no_of_all_supliers;
