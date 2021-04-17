@@ -41,6 +41,33 @@ left join buy on buy.fk_customer_id = customers.CustomerID
 
 
 
--- what  products were sent between this and that date, 
+-- 4 QUERY: Show me the customers who actively searched for products between 01.06.2002 and now
+SELECT searches.SearchID, customers.CustomerID, customers.FirstName, customers.LastName, searches.SearchDate
+from customers 
+INNER JOIN searches on searches.fk_customer_id = customers.CustomerID where searches.SearchDate >= '2020-06-01' && searches.SearchDate <= CURRENT_DATE
 
--- how many products were sent to a specific city etc.
+
+
+-- 5 QUERY: Show me customers who have not searched for products
+SELECT searches.SearchID, customers.CustomerID, customers.FirstName, customers.LastName, searches.SearchDate
+from customers 
+left JOIN searches on searches.fk_customer_id = customers.CustomerID WHERE searches.SearchDate is null
+
+
+
+--  6 QUERY: Show me the customers who actively searched for products between 01.06.2002 and now & show me the products they are interested in
+SELECT searches.SearchID, products.ProductName, customers.CustomerID, customers.FirstName, customers.LastName, searches.SearchDate
+from products
+INNER join searches on searches.fk_product_id = products.ProductID
+INNER JOIN customers on searches.fk_customer_id = customers.CustomerID where searches.SearchDate >= '2020-06-01' && searches.SearchDate <= CURRENT_DATE
+
+
+-- 7 QUERY: how many customers received a parcel?
+SELECT COUNT(*) from delivers_products_to;
+
+-- 8 QUERY: how often did a customer receive a parcel from each shipping company?
+SELECT customers.CustomerID, COUNT(fk_customer_id) as 'Number_of_times', shipping_company.ShippingCompanyName
+from delivers_products_to
+INNER JOIN customers on delivers_products_to.fk_customer_id = customers.CustomerID
+INNER join shipping_company on delivers_products_to.fk_shipping_company_id = shipping_company.ShippingCompanyID
+GROUP by delivers_products_to.fk_shipping_company_id
