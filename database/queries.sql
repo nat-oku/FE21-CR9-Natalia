@@ -17,27 +17,13 @@ SELECT products.ProductName, supplier.SupplierID
 FROM((sells INNER JOIN products ON fk_product_id = products.ProductID) INNER JOIN supplier ON fk_supplier_id = supplier.SupplierID)
 
 
-
-
--- how many products were bought from a specific company
-  -- (1) Which products were bought
-  -- (2) how many products were paid for
-  SELECT COUNT(PaymentID) as no_of_products_paid from payment where payment.DateOfPayment is not NULL;
-
-
-
-
--- 2 QUERY: who purchased which product on which date
-SELECT customers.CustomerID, customers.FirstName, customers.LastName, products.ProductName, buy.DateOfBuy
-from buy
-INNER join customers on buy.fk_customer_id = customers.CustomerID 
-INNER join products on buy.fk_product_id = products.ProductID
+/* *** 2 QUERY: SEE THE END OF THE DOCUMENT *** */
 
 
 -- 3 QUERY: are there any customers who haven't purchased yet?
 SELECT customers.CustomerID, customers.FirstName, customers.LastName, buy.DateOfBuy
 from customers
-left join buy on buy.fk_customer_id = customers.CustomerID
+LEFT JOIN buy on buy.fk_customer_id = customers.CustomerID
 
 
 
@@ -47,6 +33,8 @@ from customers
 INNER JOIN searches on searches.fk_customer_id = customers.CustomerID where searches.SearchDate >= '2020-06-01' && searches.SearchDate <= CURRENT_DATE
 
 
+/* *** 6 QUERY: SEE THE END OF THE DOCUMENT *** */
+
 
 -- 5 QUERY: Show me customers who have not searched for products
 SELECT searches.SearchID, customers.CustomerID, customers.FirstName, customers.LastName, searches.SearchDate
@@ -54,23 +42,11 @@ from customers
 left JOIN searches on searches.fk_customer_id = customers.CustomerID WHERE searches.SearchDate is null
 
 
-
---  6 QUERY: Show me the customers who actively searched for products between 01.06.2002 and now & show me the products they are interested in
-SELECT searches.SearchID, products.ProductName, customers.CustomerID, customers.FirstName, customers.LastName, searches.SearchDate
-from products
-INNER join searches on searches.fk_product_id = products.ProductID
-INNER JOIN customers on searches.fk_customer_id = customers.CustomerID where searches.SearchDate >= '2020-06-01' && searches.SearchDate <= CURRENT_DATE
-
-
 -- 7 QUERY: how many customers received a parcel?
 SELECT COUNT(*) from delivers_products_to;
 
--- 8 QUERY: how often did a customer receive a parcel from each shipping company?
-SELECT customers.CustomerID, COUNT(fk_customer_id) as 'Number_of_times', shipping_company.ShippingCompanyName
-from delivers_products_to
-INNER JOIN customers on delivers_products_to.fk_customer_id = customers.CustomerID
-INNER join shipping_company on delivers_products_to.fk_shipping_company_id = shipping_company.ShippingCompanyID
-GROUP by delivers_products_to.fk_shipping_company_id
+
+/* *** 8 QUERY: SEE THE END OF THE DOCUMENT *** */
 
 
 -- 9 QUERY: show me unpaid invoices
@@ -89,10 +65,40 @@ SELECT (
     as no_of_successful_payments;
 
 
+-- 11 QUERY: which products were bought from a specific company
+  SELECT products.ProductID, products.ProductName, buy.DateOfBuy
+  from buy
+  INNER JOIN products on buy.fk_product_id = products.ProductID WHERE buy.DateOfBuy is not null
+
+-- 12 QUERY: how many products were paid for
+SELECT COUNT(PaymentID) as no_of_products_paid from payment where payment.DateOfPayment is not NULL;
 
 
 
 
+
+/* **** QUERIES CONNECTING MORE THAN 3 TABLES *** */
+
+
+-- 2 QUERY: who purchased which product on which date
+SELECT customers.CustomerID, customers.FirstName, customers.LastName, products.ProductName, buy.DateOfBuy
+from buy
+INNER join customers on buy.fk_customer_id = customers.CustomerID 
+INNER join products on buy.fk_product_id = products.ProductID
+
+--  6 QUERY: Show me the customers who actively searched for products between 01.06.2002 and now & show me the products they are interested in
+SELECT searches.SearchID, products.ProductName, customers.CustomerID, customers.FirstName, customers.LastName, searches.SearchDate
+from products
+INNER join searches on searches.fk_product_id = products.ProductID
+INNER JOIN customers on searches.fk_customer_id = customers.CustomerID where searches.SearchDate >= '2020-06-01' && searches.SearchDate <= CURRENT_DATE
+
+
+-- 8 QUERY: how often did a customer receive a parcel from each shipping company?
+SELECT customers.CustomerID, COUNT(fk_customer_id) as 'Number_of_times', shipping_company.ShippingCompanyName
+from delivers_products_to
+INNER JOIN customers on delivers_products_to.fk_customer_id = customers.CustomerID
+INNER join shipping_company on delivers_products_to.fk_shipping_company_id = shipping_company.ShippingCompanyID
+GROUP by delivers_products_to.fk_shipping_company_id
 
 
 
